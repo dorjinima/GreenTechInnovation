@@ -1,0 +1,3148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Tech Innovation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            /* 🌿 Main Green (Primary Brand Color) */
+            --primary-green: #2ECC71;
+            --dark-green: #1E8449;
+            --metallic-green: #4DFF88;
+
+            /* 🧠 Nerves / Energy Lines (Organic–Tech Feel) */
+            --neon-orange: #FF8C00;
+            --amber-glow: #FFC107;
+            --copper-shadow: #B35900;
+
+            /* ⚙️ Tech / Mechanical Accents */
+            --cyber-green: #00FF9C;
+            --dark-tech-green: #0B3D2E;
+
+            /* 🟧 "INNOVATION" Text & Underline */
+            --bright-orange: #FF9800;
+            --dark-orange: #E65100;
+
+            /* ⚫ Background & UI */
+            --black-bg: #000000;
+            --dark-card-bg: #0A0A0A;
+            --light-card-bg: #111111;
+            --text-light: #E0E0E0;
+            --text-gray: #AAAAAA;
+            --white: #FFFFFF;
+
+            /* Service Category Colors */
+            --tech-blue: #2ECC71;
+            /* Changed from #3B82F6 to primary green */
+            --tech-purple: #4DFF88;
+            /* Changed from #8B5CF6 to metallic green */
+            --wordpress-blue: #00FF9C;
+            /* Changed from #21759B to cyber green */
+            --ecommerce-orange: #FF8C00;
+            /* Changed from #FF6B35 to neon orange */
+            --ai-purple: #FF9800;
+            /* Changed from #9D4EDD to bright orange */
+
+            /* Gradients */
+            --gradient: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+            --energy-gradient: linear-gradient(90deg, var(--neon-orange) 0%, var(--amber-glow) 50%, var(--neon-orange) 100%);
+            --innovation-gradient: linear-gradient(90deg, var(--bright-orange) 0%, var(--dark-orange) 100%);
+            --tech-gradient: linear-gradient(135deg, var(--tech-blue) 0%, var(--tech-purple) 100%);
+            --wordpress-gradient: linear-gradient(135deg, var(--wordpress-blue) 0%, var(--cyber-green) 100%);
+            --ecommerce-gradient: linear-gradient(135deg, var(--ecommerce-orange) 0%, var(--amber-glow) 100%);
+            --ai-gradient: linear-gradient(135deg, var(--ai-purple) 0%, var(--copper-shadow) 100%);
+
+            --shadow: 0 10px 25px rgba(46, 204, 113, 0.1);
+            --shadow-hover: 0 20px 40px rgba(46, 204, 113, 0.25);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            --border-radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--text-light);
+            background-color: var(--black-bg);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 80%, rgba(46, 204, 113, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Circuit pattern overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(90deg, transparent 99%, rgba(0, 255, 156, 0.03) 100%),
+                linear-gradient(0deg, transparent 99%, rgba(0, 255, 156, 0.03) 100%);
+            background-size: 50px 50px;
+            z-index: -1;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--energy-gradient);
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 24px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section-title p i {
+            color: var(--cyber-green);
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .gradient-text {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .innovation-text {
+            background: var(--innovation-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .energy-text {
+            background: var(--energy-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tech-gradient-text {
+            background: var(--tech-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .wordpress-gradient-text {
+            background: var(--wordpress-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ecommerce-gradient-text {
+            background: var(--ecommerce-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .ai-gradient-text {
+            background: var(--ai-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--black-bg);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(46, 204, 113, 0.5);
+        }
+
+        .btn-tech {
+            background: var(--energy-gradient);
+            color: var(--black-bg);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.4);
+        }
+
+        .btn-tech:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 140, 0, 0.6);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        header.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            transition: var(--transition);
+        }
+
+        header.scrolled nav {
+            padding: 10px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black-bg);
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--energy-gradient);
+            bottom: 0;
+            left: 0;
+            animation: pulse 2s infinite;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        .logo-text span {
+            background: var(--innovation-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .logo-text span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--innovation-gradient);
+            bottom: 0;
+            left: 0;
+            border-radius: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 36px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a i {
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--energy-gradient);
+            left: 0;
+            bottom: 0;
+            border-radius: 2px;
+            transition: var(--transition);
+            box-shadow: 0 0 5px rgba(255, 140, 0, 0.5);
+        }
+
+        .nav-links a:hover {
+            color: var(--cyber-green);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--cyber-green);
+            font-weight: 600;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: var(--gradient);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            color: var(--black-bg);
+            font-size: 1.5rem;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mobile-menu-btn::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--energy-gradient);
+            bottom: 0;
+            left: 0;
+        }
+
+        .mobile-menu-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 160px;
+            padding-bottom: 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(46, 204, 113, 0.05) 0%, rgba(30, 132, 73, 0.05) 100%);
+            z-index: -1;
+        }
+
+        /* Energy lines in hero background */
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(90deg, transparent 99%, rgba(255, 140, 0, 0.1) 100%),
+                linear-gradient(0deg, transparent 99%, rgba(255, 140, 0, 0.1) 100%);
+            background-size: 80px 80px;
+            opacity: 0.2;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text h1 i {
+            color: var(--cyber-green);
+            font-size: 3.5rem;
+            flex-shrink: 0;
+        }
+
+        .hero-text .tagline {
+            font-size: 1.5rem;
+            color: var(--text-gray);
+            margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero-text .tagline i {
+            color: var(--cyber-green);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            max-width: 540px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .hero-text p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-hover);
+            transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .hero-image:hover img {
+            transform: perspective(1000px) rotateY(0) rotateX(0);
+            box-shadow: 0 25px 50px rgba(46, 204, 113, 0.3);
+        }
+
+        /* Hero image decorative elements */
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--gradient);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            top: -30px;
+            right: -30px;
+            z-index: -1;
+            opacity: 0.3;
+            animation: morphing 15s infinite;
+            filter: blur(20px);
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: var(--energy-gradient);
+            border-radius: 50%;
+            bottom: -30px;
+            left: -30px;
+            z-index: -1;
+            opacity: 0.2;
+            animation: float 8s ease-in-out infinite;
+            filter: blur(15px);
+        }
+
+        @keyframes morphing {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            25% {
+                border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+            }
+
+            50% {
+                border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+            }
+
+            75% {
+                border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes energyFlow {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 200% 0%;
+            }
+        }
+
+        /* Services Tabs */
+        .services-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tab-btn {
+            padding: 12px 28px;
+            background: var(--dark-card-bg);
+            border: 2px solid rgba(46, 204, 113, 0.3);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tab-btn i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .tab-btn:hover {
+            border-color: var(--primary-green);
+            color: var(--cyber-green);
+        }
+
+        .tab-btn.active {
+            background: var(--gradient);
+            border-color: transparent;
+            color: var(--black-bg);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .tab-btn.tech-tab.active {
+            background: var(--tech-gradient);
+            box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .tab-btn.wordpress-tab.active {
+            background: var(--wordpress-gradient);
+            box-shadow: 0 8px 20px rgba(0, 255, 156, 0.3);
+        }
+
+        .tab-btn.ecommerce-tab.active {
+            background: var(--ecommerce-gradient);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.3);
+        }
+
+        .tab-btn.ai-tab.active {
+            background: var(--ai-gradient);
+            box-shadow: 0 8px 20px rgba(255, 152, 0, 0.3);
+        }
+
+        /* Services Containers */
+        .services-container {
+            display: none;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .services-container.active {
+            display: grid;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: var(--light-card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+            z-index: 2;
+            transition: var(--transition);
+            animation: energyFlow 3s infinite linear;
+            background-size: 200% 100%;
+        }
+
+        .service-card.tech-service::before {
+            background: var(--tech-gradient);
+        }
+
+        .service-card.wordpress-service::before {
+            background: var(--wordpress-gradient);
+        }
+
+        .service-card.ecommerce-service::before {
+            background: var(--ecommerce-gradient);
+        }
+
+        .service-card.ai-service::before {
+            background: var(--ai-gradient);
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(46, 204, 113, 0.3);
+        }
+
+        .service-card:hover::before {
+            height: 100%;
+            opacity: 0.05;
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cyber-green);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+
+        .service-card.tech-service .service-icon {
+            background: rgba(46, 204, 113, 0.1);
+            color: var(--primary-green);
+        }
+
+        .service-card.wordpress-service .service-icon {
+            background: rgba(0, 255, 156, 0.1);
+            color: var(--cyber-green);
+        }
+
+        .service-card.ecommerce-service .service-icon {
+            background: rgba(255, 140, 0, 0.1);
+            color: var(--neon-orange);
+        }
+
+        .service-card.ai-service .service-icon {
+            background: rgba(255, 152, 0, 0.1);
+            color: var(--bright-orange);
+        }
+
+        .service-card:hover .service-icon {
+            background: var(--gradient);
+            color: var(--black-bg);
+            transform: scale(1.1);
+        }
+
+        .service-card.tech-service:hover .service-icon {
+            background: var(--tech-gradient);
+        }
+
+        .service-card.wordpress-service:hover .service-icon {
+            background: var(--wordpress-gradient);
+        }
+
+        .service-card.ecommerce-service:hover .service-icon {
+            background: var(--ecommerce-gradient);
+        }
+
+        .service-card.ai-service:hover .service-icon {
+            background: var(--ai-gradient);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-card h3 i {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .service-card p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .tech-service .service-card p i {
+            color: var(--primary-green);
+        }
+
+        .wordpress-service .service-card p i {
+            color: var(--cyber-green);
+        }
+
+        .ecommerce-service .service-card p i {
+            color: var(--neon-orange);
+        }
+
+        .ai-service .service-card p i {
+            color: var(--bright-orange);
+        }
+
+        .service-features {
+            margin: 20px 0;
+            padding-left: 0;
+        }
+
+        .service-features li {
+            margin-bottom: 10px;
+            color: var(--text-gray);
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .service-features li i {
+            color: var(--cyber-green);
+            margin-top: 3px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .tech-service .service-features li i {
+            color: var(--primary-green);
+        }
+
+        .wordpress-service .service-features li i {
+            color: var(--cyber-green);
+        }
+
+        .ecommerce-service .service-features li i {
+            color: var(--neon-orange);
+        }
+
+        .ai-service .service-features li i {
+            color: var(--bright-orange);
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--cyber-green);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            margin-top: auto;
+        }
+
+        .tech-service .service-link {
+            color: var(--primary-green);
+        }
+
+        .wordpress-service .service-link {
+            color: var(--cyber-green);
+        }
+
+        .ecommerce-service .service-link {
+            color: var(--neon-orange);
+        }
+
+        .ai-service .service-link {
+            color: var(--bright-orange);
+        }
+
+        .service-link:hover {
+            gap: 12px;
+        }
+
+        /* Process Section */
+        .process {
+            background: var(--dark-card-bg);
+            border-top: 1px solid rgba(46, 204, 113, 0.1);
+            border-bottom: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            padding: 30px 20px;
+            background: var(--light-card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .process-step:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(46, 204, 113, 0.3);
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black-bg);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 25px;
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
+        }
+
+        .process-step h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: var(--text-light);
+        }
+
+        .process-step h3 i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .process-step p {
+            color: var(--text-gray);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .process-step p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .tech-item {
+            background: var(--light-card-bg);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .tech-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(46, 204, 113, 0.3);
+        }
+
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .tech-icon.web {
+            color: var(--primary-green);
+        }
+
+        .tech-icon.wordpress {
+            color: var(--cyber-green);
+        }
+
+        .tech-icon.ecommerce {
+            color: var(--neon-orange);
+        }
+
+        .tech-icon.ai {
+            color: var(--bright-orange);
+        }
+
+        .tech-icon.eco {
+            color: var(--metallic-green);
+        }
+
+        .tech-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: var(--text-light);
+        }
+
+        .tech-item h3 i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .tech-item p {
+            color: var(--text-gray);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .tech-item p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            background: var(--dark-card-bg);
+            border-top: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-item {
+            background: var(--light-card-bg);
+            border-radius: var(--border-radius);
+            padding: 35px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(46, 204, 113, 0.3);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cyber-green);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-light);
+        }
+
+        .feature-item h3 i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .feature-item p {
+            color: var(--text-gray);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .feature-item p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: var(--dark-card-bg);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow);
+            border-color: rgba(46, 204, 113, 0.3);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black-bg);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-light);
+        }
+
+        .contact-card h3 i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .contact-card p {
+            color: var(--text-gray);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-card p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-form-container {
+            background: var(--light-card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group label i {
+            color: var(--cyber-green);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: var(--dark-card-bg);
+            color: var(--text-light);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-status {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .form-status i {
+            font-size: 1.2rem;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .form-status.success {
+            background-color: rgba(46, 204, 113, 0.1);
+            color: var(--metallic-green);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            display: flex;
+        }
+
+        .form-status.error {
+            background-color: rgba(179, 89, 0, 0.1);
+            color: #FF8C00;
+            border: 1px solid rgba(179, 89, 0, 0.3);
+            display: flex;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-tech-green);
+            color: var(--text-light);
+            padding: 80px 0 40px;
+            position: relative;
+            border-top: 1px solid rgba(46, 204, 113, 0.1);
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(90deg, transparent 49%, rgba(0, 255, 156, 0.05) 50%, transparent 51%),
+                linear-gradient(0deg, transparent 49%, rgba(0, 255, 156, 0.05) 50%, transparent 51%);
+            background-size: 40px 40px;
+            opacity: 0.2;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--black-bg);
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-logo-icon::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--energy-gradient);
+            bottom: 0;
+            left: 0;
+            animation: pulse 2s infinite;
+        }
+
+        .footer-logo-text h2 {
+            font-size: 1.8rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+        .footer-logo-text span {
+            background: var(--innovation-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-about p {
+            color: var(--text-gray);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .footer-about p i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(46, 204, 113, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .social-link:hover {
+            background: var(--gradient);
+            color: var(--black-bg);
+            transform: translateY(-5px);
+            border-color: transparent;
+        }
+
+        .footer-links h3,
+        .footer-contact h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links h3 i,
+        .footer-contact h3 i {
+            color: var(--cyber-green);
+            flex-shrink: 0;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a i {
+            flex-shrink: 0;
+            color: var(--cyber-green);
+        }
+
+        .footer-links a:hover {
+            color: var(--cyber-green);
+            gap: 15px;
+        }
+
+        .footer-contact p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .footer-contact i {
+            color: var(--cyber-green);
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(46, 204, 113, 0.2);
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .copyright a {
+            color: var(--cyber-green);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .copyright a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: var(--black-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 10px 25px rgba(46, 204, 113, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(46, 204, 113, 0.5);
+        }
+
+        /* ========== MOBILE RESPONSIVE DESIGN ========== */
+
+        /* Large Tablets & Small Laptops */
+        @media (max-width: 1200px) {
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+
+            .services-container {
+                grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            }
+        }
+
+        /* Tablets */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+
+            .hero-text h1 {
+                justify-content: center;
+            }
+
+            .hero-text p {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .process-step p,
+            .tech-item p,
+            .feature-item p {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile Phones - Tablets */
+        @media (max-width: 768px) {
+
+            /* Navigation */
+            .nav-links {
+                position: fixed;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                gap: 25px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                z-index: 999;
+                border-bottom: 1px solid rgba(46, 204, 113, 0.2);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            /* Hero Section */
+            .hero {
+                padding-top: 140px;
+                padding-bottom: 80px;
+            }
+
+            .hero-text h1 {
+                font-size: 2.8rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-text h1 i {
+                font-size: 3rem;
+            }
+
+            .tagline {
+                font-size: 1.3rem;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .section-title p {
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+            }
+
+            /* Services - 2 COLUMNS ON MOBILE */
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .service-card {
+                padding: 25px 20px;
+            }
+
+            .service-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.6rem;
+                margin-bottom: 20px;
+            }
+
+            .service-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .service-card p,
+            .feature-item p,
+            .tech-item p,
+            .process-step p {
+                font-size: 0.95rem;
+                text-align: left;
+            }
+
+            .service-features li {
+                font-size: 0.9rem;
+            }
+
+            /* Services Tabs */
+            .services-tabs {
+                flex-direction: row;
+                justify-content: center;
+                overflow-x: auto;
+                padding-bottom: 10px;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .tab-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                white-space: nowrap;
+            }
+
+            /* Process Steps - 2 columns on mobile */
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .process-step {
+                padding: 25px 15px;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .process-step h3 {
+                font-size: 1.2rem;
+            }
+
+            /* Tech Stack - 2 columns on mobile */
+            .tech-stack-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .tech-item {
+                padding: 25px 20px;
+            }
+
+            .tech-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+
+            .tech-item h3 {
+                font-size: 1.1rem;
+            }
+
+            /* Why Choose Us - 2 columns on mobile */
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .feature-item {
+                padding: 25px 20px;
+            }
+
+            .feature-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+
+            .feature-item h3 {
+                font-size: 1.1rem;
+            }
+
+            /* Contact Form */
+            .contact-form-container {
+                padding: 30px 25px;
+            }
+
+            .form-group label {
+                font-size: 0.95rem;
+            }
+
+            .form-control {
+                padding: 14px 18px;
+                font-size: 0.95rem;
+            }
+
+            /* Footer */
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .footer-about {
+                grid-column: span 2;
+            }
+
+            .footer-links h3,
+            .footer-contact h3 {
+                justify-content: flex-start;
+            }
+
+            .footer-links ul {
+                text-align: left;
+            }
+
+            .footer-links a {
+                justify-content: flex-start;
+            }
+
+            .footer-contact p {
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .copyright {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .back-to-top {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Small Mobile Phones */
+        @media (max-width: 576px) {
+            .hero-text h1 {
+                font-size: 2.3rem;
+            }
+
+            .hero-text h1 i {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-text p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                padding: 14px 28px;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            /* Services - Still 2 columns on small phones */
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .service-card {
+                padding: 20px 15px;
+            }
+
+            .service-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+
+            .service-card h3 {
+                font-size: 1.1rem;
+                gap: 8px;
+            }
+
+            .service-card h3 i {
+                font-size: 1rem;
+            }
+
+            .service-card p {
+                font-size: 0.9rem;
+                gap: 8px;
+            }
+
+            .service-card p i {
+                font-size: 1rem;
+            }
+
+            .service-features {
+                margin: 15px 0;
+            }
+
+            .service-features li {
+                font-size: 0.85rem;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            .service-features li i {
+                font-size: 0.9rem;
+            }
+
+            /* Services Tabs */
+            .services-tabs {
+                justify-content: flex-start;
+                padding-bottom: 15px;
+            }
+
+            .tab-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            /* Process Steps - 2 columns */
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .process-step {
+                padding: 20px 15px;
+            }
+
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+
+            .process-step h3 {
+                font-size: 1rem;
+                gap: 8px;
+            }
+
+            .process-step h3 i {
+                font-size: 0.9rem;
+            }
+
+            .process-step p {
+                font-size: 0.85rem;
+                gap: 8px;
+            }
+
+            .process-step p i {
+                font-size: 0.9rem;
+            }
+
+            /* Tech Stack - 2 columns */
+            .tech-stack-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .tech-item {
+                padding: 20px 15px;
+            }
+
+            .tech-icon {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .tech-item h3 {
+                font-size: 1rem;
+                gap: 8px;
+            }
+
+            .tech-item h3 i {
+                font-size: 0.9rem;
+            }
+
+            .tech-item p {
+                font-size: 0.85rem;
+                gap: 8px;
+            }
+
+            .tech-item p i {
+                font-size: 0.9rem;
+            }
+
+            /* Why Choose Us - 2 columns */
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .feature-item {
+                padding: 20px 15px;
+            }
+
+            .feature-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+
+            .feature-item h3 {
+                font-size: 1rem;
+                gap: 8px;
+            }
+
+            .feature-item h3 i {
+                font-size: 0.9rem;
+            }
+
+            .feature-item p {
+                font-size: 0.85rem;
+                gap: 8px;
+            }
+
+            .feature-item p i {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 0 12px;
+            }
+        }
+
+        /* Extra Small Mobile Phones */
+        @media (max-width: 400px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .logo-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.3rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            /* Services - Still 2 columns but tighter */
+            .services-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .service-card {
+                padding: 18px 12px;
+            }
+
+            .service-icon {
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+
+            .service-card h3 {
+                font-size: 1rem;
+            }
+
+            .service-card p {
+                font-size: 0.85rem;
+            }
+
+            .service-features li {
+                font-size: 0.8rem;
+            }
+
+            .tab-btn {
+                padding: 8px 14px;
+                font-size: 0.8rem;
+            }
+
+            .tab-btn i {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+
+            .service-card:hover,
+            .feature-item:hover,
+            .tech-item:hover,
+            .contact-card:hover,
+            .process-step:hover {
+                transform: none;
+            }
+
+            .nav-links a:hover::after {
+                width: 0;
+            }
+
+            .service-link:hover {
+                gap: 8px;
+            }
+
+            .social-link:hover {
+                transform: none;
+            }
+
+            .btn:hover {
+                transform: none;
+            }
+
+            .back-to-top:hover {
+                transform: none;
+            }
+
+            .tab-btn:hover {
+                border-color: rgba(46, 204, 113, 0.3);
+                color: var(--text-light);
+            }
+
+            .tab-btn.active:hover {
+                border-color: transparent;
+                color: var(--black-bg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <ul class="nav-links">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#services"><i class="fas fa-laptop-code"></i> Services</a></li>
+            <li><a href="#process"><i class="fas fa-cogs"></i> Process</a></li>
+            <li><a href="#tech-stack"><i class="fas fa-code"></i> Tech Stack</a></li>
+            <li><a href="#why-choose-us"><i class="fas fa-star"></i> Why Us</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="tagline">
+                        <i class="fas fa-seedling"></i>
+                        <span>Innovative Sustainable & Eco-Friendly Solutions for a Brighter Future</span>
+                    </div>
+                    <p><i class="fas fa-check-circle"></i> We provide comprehensive technology services from hard code
+                        development to WordPress solutions, all designed with sustainability at their core.</p>
+                    <p><i class="fas fa-bolt"></i> Eco-friendly development practices that reduce carbon footprint while
+                        delivering cutting-edge technology solutions.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Services</a>
+                        <a href="#contact" class="btn btn-tech"><i class="fas fa-calendar-check"></i> Start Project</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Green Technology Solutions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Comprehensive Services</h2>
+                <p><i class="fas fa-cogs"></i> We offer a wide range of technology solutions, from custom development to
+                    sustainable digital products.</p>
+            </div>
+
+            <div class="services-tabs">
+                <button class="tab-btn active" data-tab="sustainability">
+                    <i class="fas fa-leaf"></i> Sustainability
+                </button>
+                <button class="tab-btn tech-tab" data-tab="tech">
+                    <i class="fas fa-laptop-code"></i> Hard Code
+                </button>
+                <button class="tab-btn wordpress-tab" data-tab="wordpress">
+                    <i class="fab fa-wordpress"></i> WordPress
+                </button>
+                <button class="tab-btn ecommerce-tab" data-tab="ecommerce">
+                    <i class="fas fa-shopping-cart"></i> E-Commerce
+                </button>
+                <button class="tab-btn ai-tab" data-tab="ai">
+                    <i class="fas fa-robot"></i> AI & ML
+                </button>
+            </div>
+
+            <!-- Sustainability Solutions -->
+            <div id="sustainability-tab" class="services-container active">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3><i class="fas fa-cloud"></i> Green Web Hosting</h3>
+                    <p><i class="fas fa-check"></i> Eco-friendly hosting solutions powered by renewable energy with
+                        carbon offset programs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-bolt"></i> Renewable energy hosting</li>
+                        <li><i class="fas fa-leaf"></i> Carbon-neutral data centers</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Energy-efficient servers</li>
+                        <li><i class="fas fa-shield-alt"></i> Green SSL certificates</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Green Hosting <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3><i class="fas fa-code-branch"></i> Carbon-Aware Dev</h3>
+                    <p><i class="fas fa-check"></i> Build digital products with minimal carbon footprint through
+                        optimized coding practices.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-battery-half"></i> Energy-efficient code</li>
+                        <li><i class="fas fa-chart-pie"></i> Carbon footprint tools</li>
+                        <li><i class="fas fa-paint-brush"></i> Sustainable UX/UI design</li>
+                        <li><i class="fas fa-server"></i> Green DevOps practices</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Start Green Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3><i class="fas fa-chart-bar"></i> Sustainability Analytics</h3>
+                    <p><i class="fas fa-check"></i> Track and optimize your digital carbon footprint with advanced
+                        analytics and reporting.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-footprint"></i> Carbon footprint analysis</li>
+                        <li><i class="fas fa-charging-station"></i> Energy monitoring</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Performance dashboards</li>
+                        <li><i class="fas fa-file-alt"></i> Compliance reporting</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Analyze Impact <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Hard Code Development -->
+            <div id="tech-tab" class="services-container">
+                <div class="service-card tech-service">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="tech-gradient-text"><i class="fas fa-desktop"></i> Custom Web Apps</h3>
+                    <p><i class="fas fa-check"></i> Build high-performance, scalable web applications from scratch using
+                        modern technologies.</p>
+                    <ul class="service-features">
+                        <li><i class="fab fa-react"></i> React, Vue.js, Angular</li>
+                        <li><i class="fab fa-node-js"></i> Node.js, Python, Java</li>
+                        <li><i class="fas fa-network-wired"></i> Microservices architecture</li>
+                        <li><i class="fas fa-code-branch"></i> RESTful & GraphQL APIs</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Start Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card tech-service">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="tech-gradient-text"><i class="fas fa-tablet-alt"></i> Mobile Apps</h3>
+                    <p><i class="fas fa-check"></i> Develop high-performance native applications for iOS and Android
+                        platforms.</p>
+                    <ul class="service-features">
+                        <li><i class="fab fa-apple"></i> iOS with Swift</li>
+                        <li><i class="fab fa-android"></i> Android with Kotlin</li>
+                        <li><i class="fab fa-react"></i> Cross-platform</li>
+                        <li><i class="fas fa-paint-brush"></i> Mobile UI/UX design</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Build App <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card tech-service">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="tech-gradient-text"><i class="fas fa-building"></i> Enterprise Systems</h3>
+                    <p><i class="fas fa-check"></i> Design and implement complex enterprise systems and scalable
+                        architectures.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-cogs"></i> ERP & CRM systems</li>
+                        <li><i class="fas fa-briefcase"></i> Business software</li>
+                        <li><i class="fas fa-history"></i> Legacy modernization</li>
+                        <li><i class="fas fa-database"></i> Database design</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Modernize Systems <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- WordPress Services -->
+            <div id="wordpress-tab" class="services-container">
+                <div class="service-card wordpress-service">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="wordpress-gradient-text"><i class="fas fa-code"></i> WordPress Dev</h3>
+                    <p><i class="fas fa-check"></i> Build fully custom WordPress themes and plugins tailored to your
+                        specific needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paint-brush"></i> Custom theme dev</li>
+                        <li><i class="fas fa-plug"></i> Plugin development</li>
+                        <li><i class="fas fa-cube"></i> Gutenberg blocks</li>
+                        <li><i class="fas fa-head-side-virus"></i> Headless WordPress</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Start Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card wordpress-service">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="wordpress-gradient-text"><i class="fas fa-palette"></i> WordPress Design</h3>
+                    <p><i class="fas fa-check"></i> Create beautiful, user-friendly WordPress websites with optimized
+                        user experiences.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-eye"></i> Custom design</li>
+                        <li><i class="fas fa-user-check"></i> UX optimization</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive design</li>
+                        <li><i class="fas fa-th"></i> Page builder customization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Design Site <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card wordpress-service">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="wordpress-gradient-text"><i class="fas fa-tools"></i> WordPress Maintenance</h3>
+                    <p><i class="fas fa-check"></i> Keep your WordPress site secure, updated, and performing at its
+                        best.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-shield-virus"></i> Security hardening</li>
+                        <li><i class="fas fa-sync-alt"></i> Updates & backups</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Performance optimization</li>
+                        <li><i class="fas fa-search"></i> SEO services</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Plan <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- E-Commerce Services -->
+            <div id="ecommerce-tab" class="services-container">
+                <div class="service-card ecommerce-service">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="ecommerce-gradient-text"><i class="fas fa-store"></i> E-Commerce Dev</h3>
+                    <p><i class="fas fa-check"></i> Build custom e-commerce solutions with advanced features and
+                        seamless experiences.</p>
+                    <ul class="service-features">
+                        <li><i class="fab fa-wordpress"></i> WooCommerce</li>
+                        <li><i class="fab fa-shopify"></i> Shopify</li>
+                        <li><i class="fab fa-magento"></i> Magento</li>
+                        <li><i class="fas fa-credit-card"></i> Payment gateways</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Launch Store <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card ecommerce-service">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="ecommerce-gradient-text"><i class="fas fa-chart-line"></i> E-Commerce Optimization</h3>
+                    <p><i class="fas fa-check"></i> Optimize your online store for maximum conversions, sales, and
+                        customer satisfaction.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-percentage"></i> Conversion optimization</li>
+                        <li><i class="fas fa-shopping-cart"></i> Checkout optimization</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Speed optimization</li>
+                        <li><i class="fas fa-user-tag"></i> Personalization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Optimize Store <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card ecommerce-service">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="ecommerce-gradient-text"><i class="fas fa-warehouse"></i> E-Commerce Ops</h3>
+                    <p><i class="fas fa-check"></i> Streamline your e-commerce operations with integrated systems and
+                        automation.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-clipboard-list"></i> Order management</li>
+                        <li><i class="fas fa-shipping-fast"></i> Shipping integration</li>
+                        <li><i class="fas fa-users"></i> CRM integration</li>
+                        <li><i class="fas fa-robot"></i> Inventory automation</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Streamline Ops <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- AI & ML Services -->
+            <div id="ai-tab" class="services-container">
+                <div class="service-card ai-service">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="ai-gradient-text"><i class="fas fa-robot"></i> AI Solutions</h3>
+                    <p><i class="fas fa-check"></i> Implement artificial intelligence to automate processes and gain
+                        valuable insights.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-comment-dots"></i> Chatbot development</li>
+                        <li><i class="fas fa-chart-line"></i> Predictive analytics</li>
+                        <li><i class="fas fa-language"></i> Natural language processing</li>
+                        <li><i class="fas fa-eye"></i> Computer vision</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Implement AI <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card ai-service">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="ai-gradient-text"><i class="fas fa-project-diagram"></i> ML Models</h3>
+                    <p><i class="fas fa-check"></i> Develop custom machine learning models tailored to your business
+                        needs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-cogs"></i> Custom ML models</li>
+                        <li><i class="fas fa-filter"></i> Data preprocessing</li>
+                        <li><i class="fas fa-graduation-cap"></i> Model training</li>
+                        <li><i class="fas fa-project-diagram"></i> MLOps pipelines</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Develop Models <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card ai-service">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="ai-gradient-text"><i class="fas fa-link"></i> AI Integration</h3>
+                    <p><i class="fas fa-check"></i> Integrate AI capabilities into your existing systems and
+                        applications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-code"></i> AI API integration</li>
+                        <li><i class="fas fa-history"></i> Legacy system AI</li>
+                        <li><i class="fas fa-cloud"></i> Cloud AI services</li>
+                        <li><i class="fas fa-layer-group"></i> AI middleware</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Integrate AI <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Development Process</h2>
+                <p><i class="fas fa-road"></i> We follow a structured, transparent process to ensure successful project
+                    delivery.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3><i class="fas fa-search"></i> Discovery & Planning</h3>
+                    <p><i class="fas fa-lightbulb"></i> We begin by understanding your requirements, goals, and
+                        challenges to create a detailed project plan.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3><i class="fas fa-pencil-ruler"></i> Design & Prototyping</h3>
+                    <p><i class="fas fa-drafting-compass"></i> Our designers create wireframes and prototypes to
+                        visualize the final product before development.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <p><i class="fas fa-laptop-code"></i> Our developers build your solution using agile methodologies
+                        with regular progress updates.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3><i class="fas fa-vial"></i> Testing & QA</h3>
+                    <p><i class="fas fa-check-double"></i> We rigorously test every aspect of your solution to ensure
+                        quality, performance, and security.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3><i class="fas fa-rocket"></i> Deployment & Launch</h3>
+                    <p><i class="fas fa-upload"></i> We deploy your solution to production with minimal downtime and
+                        comprehensive launch support.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3><i class="fas fa-tools"></i> Maintenance & Support</h3>
+                    <p><i class="fas fa-headset"></i> We provide ongoing maintenance, updates, and support to keep your
+                        solution running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Technology Stack</h2>
+                <p><i class="fas fa-cogs"></i> We use modern, efficient technologies that align with our sustainability
+                    principles.</p>
+            </div>
+
+            <div class="tech-stack-container">
+                <div class="tech-item">
+                    <div class="tech-icon web">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3><i class="fas fa-desktop"></i> Frontend Tech</h3>
+                    <p><i class="fas fa-code"></i> React, Vue.js, Angular, TypeScript, Next.js for performant
+                        interfaces.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon wordpress">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3><i class="fas fa-server"></i> Backend Tech</h3>
+                    <p><i class="fas fa-database"></i> Node.js, Python, Java, PHP, .NET for robust backends.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon ecommerce">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3><i class="fas fa-hdd"></i> Databases</h3>
+                    <p><i class="fas fa-table"></i> MySQL, PostgreSQL, MongoDB, Redis for scalable data storage.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon ai">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3><i class="fas fa-cloud-upload-alt"></i> Cloud & DevOps</h3>
+                    <p><i class="fas fa-infinity"></i> AWS, Azure, Google Cloud, Docker, Kubernetes for scalable
+                        infrastructure.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon eco">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3><i class="fas fa-file-alt"></i> CMS Platforms</h3>
+                    <p><i class="fas fa-edit"></i> WordPress, Drupal, Shopify, Magento for content management.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon web">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3><i class="fas fa-brain"></i> AI & ML Tools</h3>
+                    <p><i class="fas fa-chart-line"></i> TensorFlow, PyTorch, OpenAI for intelligent solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Green Tech Innovation</h2>
+                <p><i class="fas fa-question-circle"></i> We combine technical excellence with environmental
+                    responsibility for sustainable solutions.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3><i class="fas fa-recycle"></i> Sustainable Development</h3>
+                    <p><i class="fas fa-check"></i> We build solutions with minimal environmental impact, using green
+                        hosting and energy-efficient coding.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3><i class="fas fa-graduation-cap"></i> Technical Excellence</h3>
+                    <p><i class="fas fa-check"></i> Our team consists of certified developers with expertise in latest
+                        technologies and best practices.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3><i class="fas fa-calendar-check"></i> Timely Delivery</h3>
+                    <p><i class="fas fa-check"></i> We follow agile methodologies to ensure projects are delivered on
+                        time and within budget.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3><i class="fas fa-phone-alt"></i> 24/7 Support</h3>
+                    <p><i class="fas fa-check"></i> We provide round-the-clock support and maintenance to keep your
+                        solutions running smoothly.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3><i class="fas fa-shield-alt"></i> Security First</h3>
+                    <p><i class="fas fa-check"></i> We implement robust security measures to protect your data and
+                        applications from threats.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3><i class="fas fa-eye"></i> Transparent Process</h3>
+                    <p><i class="fas fa-check"></i> We maintain open communication and provide regular updates
+                        throughout development process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-comments"></i> Ready to build sustainable technology solutions? Get in touch with
+                    our team today.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3><i class="fas fa-paper-plane"></i> Email Us</h3>
+                        <p><i class="fas fa-at"></i> contact@greentechinnovation.com</p>
+                        <p><i class="fas fa-at"></i> sales@greentechinnovation.com</p>
+                        <p><i class="fas fa-at"></i> support@greentechinnovation.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3><i class="fas fa-phone-volume"></i> Call Us</h3>
+                        <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567 (Sales)</p>
+                        <p><i class="fas fa-phone-alt"></i> +1 (555) 987-6543 (Support)</p>
+                        <p><i class="fas fa-phone-alt"></i> +1 (555) 456-7890 (Emergency)</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3><i class="fas fa-map-pin"></i> Visit Us</h3>
+                        <p><i class="fas fa-location-arrow"></i> 123 Eco Avenue, Suite 500</p>
+                        <p><i class="fas fa-city"></i> Green City, GC 10101</p>
+                        <p><i class="fas fa-globe-americas"></i> United States</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3><i class="fas fa-business-time"></i> Business Hours</h3>
+                        <p><i class="fas fa-calendar-day"></i> Mon-Fri: 9:00 AM - 6:00 PM EST</p>
+                        <p><i class="fas fa-calendar-day"></i> Sat: 10:00 AM - 2:00 PM EST</p>
+                        <p><i class="fas fa-exclamation-circle"></i> 24/7 Emergency Support</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-status" id="formStatus"></div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                            <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+1 (555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company"><i class="fas fa-building"></i> Company</label>
+                            <input type="text" id="company" class="form-control" placeholder="Your Company Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service-category"><i class="fas fa-cogs"></i> Service Category *</label>
+                            <select id="service-category" class="form-control" required>
+                                <option value="">Select a category</option>
+                                <option value="sustainability">Sustainability Solutions</option>
+                                <option value="hardcode">Hard Code Development</option>
+                                <option value="wordpress">WordPress Services</option>
+                                <option value="ecommerce">E-Commerce Solutions</option>
+                                <option value="ai">AI & Machine Learning</option>
+                                <option value="multiple">Multiple Services</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget"><i class="fas fa-money-bill-wave"></i> Project Budget</label>
+                            <select id="budget" class="form-control">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-plus">$100,000+</option>
+                                <option value="not-sure">Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline"><i class="fas fa-calendar-alt"></i> Project Timeline</label>
+                            <select id="timeline" class="form-control">
+                                <option value="">Select timeline</option>
+                                <option value="urgent">Urgent (1-2 weeks)</option>
+                                <option value="short">Short (1 month)</option>
+                                <option value="medium">Medium (1-3 months)</option>
+                                <option value="long">Long (3-6 months)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-dots"></i> Project Details *</label>
+                            <textarea id="message" class="form-control" required
+                                placeholder="Describe your project, requirements, and goals..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Send Message & Get Free Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="footer-logo-text">
+                            <h2>Green Tech <span>Innovation</span></h2>
+                        </div>
+                    </div>
+                    <p><i class="fas fa-info-circle"></i> Creating sustainable technology for a greener tomorrow. We
+                        develop innovative web, app, and system solutions that reduce environmental impact while driving
+                        business growth.</p>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-laptop-code"></i> Our Services</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-code"></i> Hard Code Development</a></li>
+                        <li><a href="#services"><i class="fab fa-wordpress"></i> WordPress Solutions</a></li>
+                        <li><a href="#services"><i class="fas fa-shopping-cart"></i> E-Commerce Development</a></li>
+                        <li><a href="#services"><i class="fas fa-robot"></i> AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3><i class="fas fa-link"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                        <li><a href="#process"><i class="fas fa-road"></i> Process</a></li>
+                        <li><a href="#tech-stack"><i class="fas fa-code-branch"></i> Tech Stack</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3><i class="fas fa-address-card"></i> Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Eco Avenue, Suite 500, Green City, GC 10101</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> contact@greentechinnovation.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 6:00 PM EST</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Green Tech Innovation. All rights reserved. | <a href="#"><i
+                            class="fas fa-user-shield"></i> Privacy Policy</a> | <a href="#"><i
+                            class="fas fa-file-contract"></i> Terms of Service</a> | Designed with <i
+                        class="fas fa-heart" style="color: var(--cyber-green);"></i> for a sustainable future</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 500) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+
+            // Active nav link based on scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Services Tab Switching
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const serviceContainers = document.querySelectorAll('.services-container');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                // Update active tab button
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Show selected service container
+                serviceContainers.forEach(container => {
+                    container.classList.remove('active');
+                });
+
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+
+        // Service card animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add delay for staggered animation
+                    setTimeout(() => {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }, index * 100);
+                    serviceObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .tech-item, .feature-item, .process-step').forEach(card => {
+            serviceObserver.observe(card);
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const company = document.getElementById('company').value;
+            const serviceCategory = document.getElementById('service-category').value;
+            const budget = document.getElementById('budget').value;
+            const timeline = document.getElementById('timeline').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (!name || !email || !serviceCategory || !message) {
+                formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> <span>Please fill in all required fields.</span>';
+                formStatus.className = 'form-status error';
+                return;
+            }
+
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formStatus.innerHTML = '<i class="fas fa-exclamation-circle"></i> <span>Please enter a valid email address.</span>';
+                formStatus.className = 'form-status error';
+                return;
+            }
+
+            // Simulate form submission
+            formStatus.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending your message...</span>';
+            formStatus.className = 'form-status';
+
+            setTimeout(() => {
+                // In a real application, you would send this data to a server
+                const serviceText = {
+                    'sustainability': 'Sustainability Solutions',
+                    'hardcode': 'Hard Code Development',
+                    'wordpress': 'WordPress Services',
+                    'ecommerce': 'E-Commerce Solutions',
+                    'ai': 'AI & Machine Learning',
+                    'multiple': 'Multiple Services',
+                    'consultation': 'Consultation'
+                }[serviceCategory] || 'Your selected service';
+
+                formStatus.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Thank you, ${name}!</strong><br>
+                        Your ${serviceText} inquiry has been received. We'll contact you at <strong>${email}</strong> within 24 hours.
+                        ${phone ? `<br>We will call you at ${phone} if needed.` : ''}
+                        ${company ? `<br>We'll follow up regarding ${company}.` : ''}
+                        <br><br><strong>Next Step:</strong> You'll receive a confirmation email with a link to schedule a free consultation.
+                    </div>
+                `;
+                formStatus.className = 'form-status success';
+
+                // Reset form
+                contactForm.reset();
+
+                // Clear success message after 10 seconds
+                setTimeout(() => {
+                    formStatus.innerHTML = '';
+                    formStatus.className = 'form-status';
+                }, 10000);
+            }, 1500);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add animation to hero image on load
+        window.addEventListener('load', () => {
+            const heroImage = document.querySelector('.hero-image img');
+            heroImage.classList.add('animate__animated', 'animate__fadeInRight');
+
+            const heroText = document.querySelector('.hero-text');
+            heroText.classList.add('animate__animated', 'animate__fadeInLeft');
+
+            // Auto switch tabs every 10 seconds (optional)
+            let currentTab = 0;
+            const tabs = document.querySelectorAll('.tab-btn');
+
+            const autoSwitchTabs = setInterval(() => {
+                currentTab = (currentTab + 1) % tabs.length;
+                tabs[currentTab].click();
+            }, 10000);
+
+            // Stop auto-switching when user interacts with tabs
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    clearInterval(autoSwitchTabs);
+                });
+            });
+        });
+
+        // Touch device optimizations
+        if ('ontouchstart' in window) {
+            // Add touch feedback to buttons
+            document.querySelectorAll('.btn, .tab-btn, .service-link, .social-link').forEach(button => {
+                button.addEventListener('touchstart', function () {
+                    this.style.transform = 'scale(0.98)';
+                });
+
+                button.addEventListener('touchend', function () {
+                    this.style.transform = '';
+                });
+            });
+        }
+
+        // Performance optimization: Lazy load images
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('img');
+
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.getAttribute('src');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            images.forEach(img => imageObserver.observe(img));
+        });
+    </script>
+</body>
+
+</html>
